@@ -4,13 +4,11 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ![apriltag demo](https://github.com/user-attachments/assets/3132a917-7472-4dc5-aa51-0416a6551e62)
 
-Demo from [apriltags](https://github.com/trev3d/QuestDisplayAccessDemo/tree/apriltags) branch
+Demo from AprilTagDemo scene
 
 ## ⚠️ Issues (please read)!
 
 ### To fix 
-
-⚠️ The code for copying the texture to Unity is a CPU byte array copy. I'm trying to fix this in the '[gltexture](https://github.com/trev3d/QuestDisplayAccessDemo/tree/gltexture)' branch
 
 ⚠️ This demo project only creates a single MediaProjector session on app launch. If the app is interrupted (such as by the headset going to sleep) the session will end and you'll need to restart the app. 
 
