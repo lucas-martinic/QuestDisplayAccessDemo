@@ -16,6 +16,8 @@ Demo from AprilTagDemo scene
 
 ⚠️ You may need to be on Quest system software v68 or higher 
 
+⚠️ This only works on-headset. This will not work through QuestLink
+
 ⚠️ You cannot video record the display 'normally' while this app's MediaProjector session is running. You can instead use [scrcpy](https://github.com/Genymobile/scrcpy) to record any prototypes or demos you make with this.
 
 ⚠️ This still isn't proper camera access. Any virtual elements will obscure physical objects in the image. If you need to track something, you must not render anything on top of it!
