@@ -25,7 +25,9 @@ Demo from AprilTagDemo scene
 ### Other info
 
 - The captured view is ~82 degrees in horizontal and vertical FOV on Quest 3
-- The texture is 1024x1024, at least on Quest 3
+- The capture texture is 1024x1024, at least on Quest 3
+- The left eye buffer is where captured frames come from
+- Quest system camera settings do not affect the capture resolution, framerate, or eye side
 
 ## Reference
 
