@@ -12,7 +12,7 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ### Gotchas
 
-⚠️ To set this up in an existing project, you'll need the app to launch with the `UnityPlayerActivityWithMediaProjector` activity. To set this up you need to modify your `manifest.xml` file. For more info, see [this page](https://docs.unity3d.com/Manual/android-custom-activity.html).
+⚠️ To set this up in an existing project, you'll need the app to launch with the `UnityPlayerActivityWithMediaProjector` activity. To set this up you need to modify your `AndroidManifest` file. For more info, see [this page](https://docs.unity3d.com/Manual/android-custom-activity.html).
 
 ⚠️ You may need to be on Quest system software v68 or higher 
 
