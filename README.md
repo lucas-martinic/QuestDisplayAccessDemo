@@ -28,7 +28,9 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ### AprilTag tracking
 
-- This project contains a modified version of [Keijiro Takahashi's AprilTag package](https://github.com/keijiro/jp.keijiro.apriltag) modified to not vertically flip the incoming texture (as it does not need to be). 
+- This project contains a modified version of [Keijiro Takahashi's AprilTag package](https://github.com/keijiro/jp.keijiro.apriltag) modified to not vertically flip the incoming texture (as it does not need to be).
+- Only works with `tagStandard41h12` tag set.
+- Set up in project to work with 12cm tags (measuring the inner white square) which is about what you'd get if you printed a tag on 8.5" by 11" letter paper 
 
 ### Other info
 
