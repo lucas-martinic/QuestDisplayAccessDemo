@@ -4,8 +4,6 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ![apriltag demo](https://github.com/user-attachments/assets/3132a917-7472-4dc5-aa51-0416a6551e62)
 
-Demo from AprilTagDemo scene
-
 ## ⚠️ Issues (please read)!
 
 ### To fix 
@@ -14,6 +12,8 @@ Demo from AprilTagDemo scene
 
 ### Gotchas
 
+⚠️ To set this up in an existing project, you'll need the app to launch with the `UnityPlayerActivityWithMediaProjector` activity. To set this up you need to modify your `manifest.xml` file. For more info, see [this page](https://docs.unity3d.com/Manual/android-custom-activity.html).
+
 ⚠️ You may need to be on Quest system software v68 or higher 
 
 ⚠️ This only works on-headset. This will not work through QuestLink
@@ -21,6 +21,10 @@ Demo from AprilTagDemo scene
 ⚠️ You cannot video record the display 'normally' while this app's MediaProjector session is running. You can instead use [scrcpy](https://github.com/Genymobile/scrcpy) to record any prototypes or demos you make with this.
 
 ⚠️ This still isn't proper camera access. Any virtual elements will obscure physical objects in the image. If you need to track something, you must not render anything on top of it!
+
+### AprilTag tracking
+
+- This project contains a modified version of [Keijiro Takahashi's AprilTag package](https://github.com/keijiro/jp.keijiro.apriltag) modified to not vertically flip the incoming texture (as it does not need to be). 
 
 ### Other info
 
