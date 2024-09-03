@@ -1,22 +1,22 @@
 # Quest Display Access Demo
 
-Developers want camera access on the Meta Quest. Meta hasn't let us have it yet. The next best thing is display access. Thanks to Android's MediaProjector API, you can copy the display image to a texture in your Unity project with minimal latency as demonstrated in this horribly architected Unity project. No PC, embedded browser, or dev mode required
+Developers want camera access on the Meta Quest. Meta hasn't let us have it yet. The next best thing is display access. Thanks to Android's MediaProjector API, you can copy the display image to a texture in your Unity project in 'near realtime' (several frames of latency) as demonstrated in this horribly architected Unity project. No PC, embedded browser, or dev mode required
 
 ![apriltag demo](https://github.com/user-attachments/assets/3132a917-7472-4dc5-aa51-0416a6551e62)
 
-Demo from [apriltags](https://github.com/trev3d/QuestDisplayAccessDemo/tree/apriltags) branch
+Demo from AprilTagDemo scene
 
 ## ⚠️ Issues (please read)!
 
 ### To fix 
-
-⚠️ The code for copying the texture to Unity is a CPU byte array copy. I'm trying to fix this in the '[gltexture](https://github.com/trev3d/QuestDisplayAccessDemo/tree/gltexture)' branch
 
 ⚠️ This demo project only creates a single MediaProjector session on app launch. If the app is interrupted (such as by the headset going to sleep) the session will end and you'll need to restart the app. 
 
 ### Gotchas
 
 ⚠️ You may need to be on Quest system software v68 or higher 
+
+⚠️ This only works on-headset. This will not work through QuestLink
 
 ⚠️ You cannot video record the display 'normally' while this app's MediaProjector session is running. You can instead use [scrcpy](https://github.com/Genymobile/scrcpy) to record any prototypes or demos you make with this.
 
@@ -25,7 +25,9 @@ Demo from [apriltags](https://github.com/trev3d/QuestDisplayAccessDemo/tree/apri
 ### Other info
 
 - The captured view is ~82 degrees in horizontal and vertical FOV on Quest 3
-- The texture is 1024x1024, at least on Quest 3
+- The capture texture is 1024x1024, at least on Quest 3
+- The left eye buffer is where captured frames come from
+- Quest system camera settings do not affect the capture resolution, framerate, or eye side
 
 ## Reference
 
