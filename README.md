@@ -10,7 +10,7 @@ Demo from AprilTagDemo scene
 
 ### To fix 
 
-⚠️ This demo project only creates a single MediaProjector session on app launch. If the app is interrupted (such as by the headset going to sleep) the session will end and you'll need to restart the app. 
+⚠️ MediaProjection stop callback doesn't seem to work correctly
 
 ### Gotchas
 
