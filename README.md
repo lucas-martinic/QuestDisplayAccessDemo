@@ -10,7 +10,7 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ⚠️ MediaProjection stop callback doesn't seem to work correctly
 
-⚠️ Head pose isn't correct for AprilTag tracking. Tag positions 'flicker' as you move or rotate your head.
+⚠️ Head pose isn't correct for AprilTag tracking. Tag positions 'flicker' as you move or rotate your head. I need to somehow reliably get the head pose at the time the latest screen frame was captured but I haven't figured out how to do this.
 
 ### Gotchas
 
