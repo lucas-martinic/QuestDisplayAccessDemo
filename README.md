@@ -16,6 +16,8 @@ Developers want camera access on the Meta Quest. Meta hasn't let us have it yet.
 
 ⚠️ To set this up in an existing project, you'll need the app to launch with the `UnityPlayerActivityWithMediaProjector` activity. To set this up you need to modify your `AndroidManifest` file. For more info, see [this page](https://docs.unity3d.com/Manual/android-custom-activity.html).
 
+⚠️ Expect ~10% CPU usage when display capture is enabled and another ~30% of CPU usage on tag tracking. This demo is horribly optimized!
+
 ⚠️ You may need to be on Quest system software v68 or higher 
 
 ⚠️ This only works on-headset. This will not work through QuestLink
